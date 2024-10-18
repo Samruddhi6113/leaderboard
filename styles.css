@@ -1,0 +1,105 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5; /* Light gray background */
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px; /* Increased width of the outer container */
+    margin: 0 auto; /* Center the container */
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Dark text for contrast */
+    font-size: 2.5em;
+}
+
+.table-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden; /* Rounded corners for table */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+th, td {
+    padding: 11px 14px; /* Reduced padding */
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s; /* Smooth background transition */
+    text-align: center;
+}
+
+th {
+    background-color: #007BFF; /* Bootstrap primary color */
+    color: white;
+    font-weight: bold;
+}
+
+tr {
+    background-color: #f9f9f9; /* Light gray for rows */
+}
+
+tr:hover {
+    background-color: #e2e6ea; /* Darker gray on hover */
+}
+
+td {
+    font-size: 1em; /* Adjusted font size for better readability */
+}
+
+/* Specific width and min-width for the Rank column */
+td:nth-child(1) {
+    width: 50px;     /* Set width for Rank column */
+    min-width: 50px; /* Ensure a minimum width for visibility */
+    font-weight: bold; /* Bold rank */
+    color: #007BFF; /* Blue for rank */
+    text-align: center; /* Center align the rank text */
+}
+
+
+.container:before {
+    content: "";
+    display: block;
+    height: 5px;
+    background: linear-gradient(90deg, rgba(0, 123, 255, 1) 0%, rgba(0, 123, 255, 0.7) 50%, rgba(0, 123, 255, 0) 100%); /* Gradient effect */
+    margin-bottom: 20px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    font-size: 0.9em; /* Smaller footer text */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    h1 {
+        font-size: 2em; /* Smaller heading */
+    }
+
+    td {
+        font-size: 0.9em; /* Adjust table text size */
+    }
+}
+
+
